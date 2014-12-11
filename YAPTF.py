@@ -37,9 +37,9 @@ def crackhouse():
         r = requests.get("http://creative.coventry.ac.uk/eh/web_ch4/welcome.php",
                          params = params)
         if r.text.find("incorrect"):
-            print "Fails on {0}".format(item)
+            print("Fails on {0}".format(item))
         else:
-            print "Passcode {0} Ok".format(item)
+            print("Passcode {0} Ok".format(item))
             return item
 
 
@@ -130,11 +130,11 @@ def generateReport():
 # Below I can test all the custom functionality that I am writing, just by calling the function
 
 if __name__ == "__main__":
-    #amazingMenu()
+    amazingMenu()
     #listRestricted()
     identifyOUI("A4:18:75")
     #print scanport("127.0.0.1",8000)
-    #print crackhouse()
+    print crackhouse()
     #print listrestricted
 
 
