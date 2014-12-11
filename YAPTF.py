@@ -37,9 +37,9 @@ def crackhouse():
         r = requests.get("http://creative.coventry.ac.uk/eh/web_ch4/welcome.php",
                          params = params)
         if r.text.find("incorrect"):
-            print("Fails on {0}".format(item))
-        else:
-            print("Passcode {0} Ok".format(item))
+            print "Fails on {0}".format(item)
+        elif r.text.find("correct"):
+            print "Passcode {0} Ok".format(item)
             return item
 
 
