@@ -29,7 +29,7 @@ def scanport(host, port):
 
 # Still a bit buggy, needs a bit of tweaking........
 
-def crackhouse():
+def crackHouse():
     """Bruteforce the password for titanium house"""
 
     for item in range(999):
@@ -134,7 +134,7 @@ if __name__ == "__main__":
     #listRestricted()
     identifyOUI("A4:18:75")
     #print scanport("127.0.0.1",8000)
-    print crackhouse()
+    print crackHouse()
     #print listrestricted
 
 
