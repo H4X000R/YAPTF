@@ -49,6 +49,46 @@ def crackhouse():
 def amazingMenu():
     """ Display an amazing Banner and the Menu for the tool to instantly impress the users."""
     
+    print '    __                   __         ____   __  __            ____  _                 ' 
+    print  '   / /   ____  _________/ /  ____  / __/  / /_/ /_  ___     / __ \(_)___  ____ ______'
+    print  '  / /   / __ \/ ___/ __  /  / __ \/ /_   / __/ __ \/ _ \   / /_/ / / __ \/ __ `/ ___/'
+    print  ' / /___/ /_/ / /  / /_/ /  / /_/ / __/  / /_/ / / /  __/  / ____/ / / / / /_/ (__  ) '
+    print '/_____/\____/_/   \____/   \____/_/     \__/_/ /_/\___/  /_/   /_/_/ /_/\__  /____/  '
+    print '                                                                       /____/        '
+
+    print 'Enter your choice (1-5): '
+
+    print '1) scanport'
+
+    print '2) crackHouse'
+
+    print '3) listRestricted'
+
+    print '4) identifyOUI'
+
+    print '5) generateReport'
+
+
+    usr_inpt = raw_input()
+
+    if usr_inpt == '1':
+        scanport()
+    elif usr_inpt == '2':
+        crackHouse()
+    elif usr_inpt == '3':
+        listRestricted()
+    elif usr_inpt == '4':
+        identifyOUI()
+    elif usr_inpt == '5':
+        generateReport()
+    else:
+        print 'Invalid Option'
+     
+    
+    print ('LOTP: by DiamondHouse inc.')
+
+    
+    
     print ('YAPTF: by DiamondHouse inc.')
 
 
