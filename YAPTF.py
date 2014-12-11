@@ -87,13 +87,6 @@ def amazingMenu():
     
     print ('LOTP: by DiamondHouse inc.')
 
-    
-    
-    print ('YAPTF: by DiamondHouse inc.')
-
-
-
-
 #This needs a bit more tweaking to get it working:
 
 def listRestricted():
