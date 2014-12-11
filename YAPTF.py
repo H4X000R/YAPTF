@@ -38,7 +38,7 @@ def crackHouse():
                          params = params)
         if r.text.find("incorrect"):
             print "Fails on {0}".format(item)
-        elif r.text.find("correct"):
+        else:
             print "Passcode {0} Ok".format(item)
             return item
 
