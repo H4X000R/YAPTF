@@ -117,15 +117,22 @@ def identifyOUI(macaddress):
 
 
 def generateReport():
-    """This function should take all the output from the selected tunctionality and save it to a file of some sort."""
+    """This function should take all the output from the selected functionality and save it to a file of some sort."""
+
+    listRestricted()
     
-    #listRestricted()
+    file = open("LotP-Report.txt", "w") # Creates the file on the Desktop
+    file.write('LotP - Report \n' )
+    file.write('-------------- \n')
+
+    #>>> Don't know how to output these functions to a file <<< #
     #print scanport("127.0.0.1",8000)
     #print crackhouse()
     #print listrestricted
-    print("Documentation generated and saved to file.")
-
     
+    file.close()
+    
+    print("Documentation generated and saved to file.")
 
 # Below I can test all the custom functionality that I am writing, just by calling the function
 
