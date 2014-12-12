@@ -121,11 +121,11 @@ def generateReport():
 
     listRestricted()
     
-    file = open("LotP-Report.txt", "w") # Creates the file on the Desktop
-    file.write('LotP - Report \n' )
+    file = open("LOTP-Report.txt", "w") # Creates the file on the Desktop
+    file.write('LOTP - Report \n' )
     file.write('-------------- \n')
 
-    #>>> Don't know how to output these functions to a file <<< #
+    #>>> Need functions to return a string value to be written to the file, so need to wait until everyone has finished <<< #
     #print scanport("127.0.0.1",8000)
     #print crackhouse()
     #print listrestricted
