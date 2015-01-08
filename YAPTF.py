@@ -118,11 +118,18 @@ def identifyOUI(macaddress):
 
 def generateReport():
     """This function should take all the output from the selected functionality and save it to a file of some sort."""
-
+    # To do this, I will need to make a string global variable in each function be appended to
+    
     listRestricted()
     
     file = open("LOTP-Report.txt", "w") # Creates the file on the Desktop
     file.write('LOTP - Report \n' )
+    file.write('-------------- \n')
+    #file.write('Scanport: \n' + scanportReport)
+    file.write('-------------- \n')
+    #file.write('Crackhouse: \n' + crackHouseReport)
+    file.write('-------------- \n')
+    #file.write('List Restricted: \n' + listrestrictedReport)
     file.write('-------------- \n')
 
     #>>> Need functions to return a string value to be written to the file, so need to wait until everyone has finished <<< #
